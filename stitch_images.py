@@ -1,9 +1,9 @@
 import cv2
 import numpy as np
 
-front_camera=cv2.imread('center.jpg')
-left_camera=cv2.imread('left.jpg')
-right_camera=cv2.imread('right.jpg')
+front_camera=cv2.imread('./assets/center.jpg')
+left_camera=cv2.imread('./assets/left.jpg')
+right_camera=cv2.imread('./assets/right.jpg')
 
 print(front_camera.shape)
 print(left_camera.shape)
@@ -27,3 +27,5 @@ else:
   print('Your Panorama is ready!!!')
   # final output
   cv2.imshow("stitched_image",stitched_op)
+
+cv2.waitKey(0)
