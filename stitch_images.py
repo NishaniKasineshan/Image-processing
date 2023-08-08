@@ -1,8 +1,6 @@
 import cv2
 import numpy as np
 
-input_data={}
-
 front_camera=cv2.imread('center.jpg')
 left_camera=cv2.imread('left.jpg')
 right_camera=cv2.imread('right.jpg')
