@@ -27,5 +27,6 @@ else:
   print('Your Panorama is ready!!!')
   # final output
   cv2.imshow("stitched_image",stitched_op)
+  cv2.imwrite("./assets/stitched_image.jpg",stitched_op)
 
 cv2.waitKey(0)
