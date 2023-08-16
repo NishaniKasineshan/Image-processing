@@ -8,14 +8,12 @@ WIDTH=640
 mask = np.zeros((HEIGHT, WIDTH, 3))
 print(type(mask),mask.shape)
 
-img=cv2.imread("pic.jpg")
+img=cv2.imread("/assets/pic.jpg")
 img=cv2.resize(img,(WIDTH,HEIGHT))
 img=img.astype(np.uint8)
 print(type(img),img.shape)
 
-# result = img.copy()
-# result = cv2.cvtColor(result, cv2.COLOR_BGR2BGRA)
-# result[:, :, 3] = mask
+
 # Loop through each line coordinates and draw the lines on the image
 cv2.line(mask, (50, 50), (200, 50), (0, 255, 0), 2) 
 cv2.line(mask, (100, 150), (250, 150), (255,0, 0), 2)  
