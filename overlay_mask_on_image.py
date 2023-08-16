@@ -8,7 +8,7 @@ WIDTH=640
 mask = np.zeros((HEIGHT, WIDTH, 3))
 print(type(mask),mask.shape)
 
-img=cv2.imread("/assets/pic.jpg")
+img=cv2.imread("./assets/pic.jpg")
 img=cv2.resize(img,(WIDTH,HEIGHT))
 img=img.astype(np.uint8)
 print(type(img),img.shape)
